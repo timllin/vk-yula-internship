@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		CAA755862BB812D7006594AA /* vk_internship_yulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA755852BB812D7006594AA /* vk_internship_yulaApp.swift */; };
-		CAA755882BB812D7006594AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA755872BB812D7006594AA /* ContentView.swift */; };
 		CAA7558A2BB812DB006594AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA755892BB812DB006594AA /* Assets.xcassets */; };
 		CAA7558D2BB812DB006594AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA7558C2BB812DB006594AA /* Preview Assets.xcassets */; };
+		CAA755952BB8130E006594AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA755942BB8130E006594AA /* MainView.swift */; };
+		CAA7559A2BB81554006594AA /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA755992BB81554006594AA /* APIResponse.swift */; };
+		CAA7559C2BB8158F006594AA /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7559B2BB8158F006594AA /* Services.swift */; };
+		CAA7559E2BB81614006594AA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7559D2BB81614006594AA /* MainViewModel.swift */; };
+		CAA755A12BB81708006594AA /* ServicesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA755A02BB81708006594AA /* ServicesAPI.swift */; };
+		CACEA3332BB8294A0023BBFB /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACEA3322BB8294A0023BBFB /* ServiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAA755822BB812D7006594AA /* vk-internship-yula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-internship-yula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA755852BB812D7006594AA /* vk_internship_yulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vk_internship_yulaApp.swift; sourceTree = "<group>"; };
-		CAA755872BB812D7006594AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAA755892BB812DB006594AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA7558C2BB812DB006594AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAA755942BB8130E006594AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CAA755992BB81554006594AA /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		CAA7559B2BB8158F006594AA /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		CAA7559D2BB81614006594AA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CAA755A02BB81708006594AA /* ServicesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAPI.swift; sourceTree = "<group>"; };
+		CACEA3322BB8294A0023BBFB /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				CAA755852BB812D7006594AA /* vk_internship_yulaApp.swift */,
-				CAA755872BB812D7006594AA /* ContentView.swift */,
-				CAA755892BB812DB006594AA /* Assets.xcassets */,
+				CAA7559D2BB81614006594AA /* MainViewModel.swift */,
+				CAA755982BB81542006594AA /* Models */,
+				CAA755932BB812E8006594AA /* Views */,
 				CAA7558B2BB812DB006594AA /* Preview Content */,
 			);
 			path = "vk-internship-yula";
@@ -65,6 +76,34 @@
 				CAA7558C2BB812DB006594AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAA755932BB812E8006594AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAA755942BB8130E006594AA /* MainView.swift */,
+				CACEA3322BB8294A0023BBFB /* ServiceView.swift */,
+				CAA755892BB812DB006594AA /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAA755982BB81542006594AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAA7559F2BB816F3006594AA /* Utilities */,
+				CAA755992BB81554006594AA /* APIResponse.swift */,
+				CAA7559B2BB8158F006594AA /* Services.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAA7559F2BB816F3006594AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CAA755A02BB81708006594AA /* ServicesAPI.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA755882BB812D7006594AA /* ContentView.swift in Sources */,
+				CAA755A12BB81708006594AA /* ServicesAPI.swift in Sources */,
+				CACEA3332BB8294A0023BBFB /* ServiceView.swift in Sources */,
+				CAA7559C2BB8158F006594AA /* Services.swift in Sources */,
+				CAA755952BB8130E006594AA /* MainView.swift in Sources */,
 				CAA755862BB812D7006594AA /* vk_internship_yulaApp.swift in Sources */,
+				CAA7559A2BB81554006594AA /* APIResponse.swift in Sources */,
+				CAA7559E2BB81614006594AA /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

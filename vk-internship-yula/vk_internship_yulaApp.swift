@@ -11,7 +11,7 @@ import SwiftUI
 struct vk_internship_yulaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
